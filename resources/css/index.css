@@ -33,9 +33,91 @@ header nav span {
   text-decoration: underline;
 }
 
-.main{
-  padding-top:69px;
+.main {
+  padding-top: 69px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+}
+
+.flex-container{
+  display:flex;
+  justify-content: center;
+}
+
+#mission{
+  background-image: url(../images/img-mission-background.jpg);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 1200px;
+  z-index: -1;
+}
+
+.content{
+  background-color: black;
+  z-index:1;
+  width: 100%;
+}
+
+#featured {
+  height: 700px;
+  width: 1000px;
+  flex-direction: column;
+}
+
+.gallery{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.item {
+  padding: 5px;
+}
+
+.item img {
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.item span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#locations{
+  display:flex;
+  background-image: url(../images/img-locations-background.jpg);
+  flex-direction: column;
+  height: 500px;
+}
+
+.locations{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.location{
+  background-color: black;
+  width: 300px;
+  padding: 15px 20px;
+  opacity:1;
+}
+
+#contact {
+  height: 200px;
+  text-align: center;
+}
+
+footer{
+  text-align: left;
 }
