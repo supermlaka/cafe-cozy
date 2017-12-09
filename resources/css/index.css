@@ -1,5 +1,4 @@
 body {
-  justify-content: center;
   background-color: black;
   font-family: helvetica;
   font-size: 22px;
@@ -15,6 +14,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 5;
+  background: black;
 }
 
 header img {
@@ -25,6 +26,7 @@ header img {
 header nav {
   flex-grow: 1;
   text-align: right;
+  padding-right: 20px;
 }
 
 header nav span {
@@ -37,30 +39,22 @@ header nav span {
   padding-top: 69px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
-.flex-container{
-  display:flex;
-  justify-content: center;
-}
-
-#mission{
+#mission {
   background-image: url(../images/img-mission-background.jpg);
-  background-color: black;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 700px;
   width: 1200px;
-  z-index: -1;
 }
 
-.content{
+.content {
   background-color: black;
-  z-index:1;
+  z-index: 1;
   width: 100%;
 }
 
@@ -70,8 +64,8 @@ header nav span {
   flex-direction: column;
 }
 
-.gallery{
-  display:flex;
+.gallery {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
@@ -93,24 +87,25 @@ header nav span {
   text-align: center;
 }
 
-#locations{
-  display:flex;
+#locations {
+  display: flex;
   background-image: url(../images/img-locations-background.jpg);
   flex-direction: column;
   height: 500px;
+  width: 1200px;
 }
 
-.locations{
-  display:flex;
+.locationslist {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.location{
+.location {
   background-color: black;
   width: 300px;
   padding: 15px 20px;
-  opacity:1;
+  opacity: 1;
 }
 
 #contact {
@@ -118,6 +113,7 @@ header nav span {
   text-align: center;
 }
 
-footer{
+footer {
   text-align: left;
+  padding-left: 20px;
 }
